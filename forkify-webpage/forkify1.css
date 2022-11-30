@@ -218,7 +218,7 @@ h2{
     
 }
 .list-ingredients>li{
-	list-style-image: url('svg icons/icons8-done.svg');
+	list-style-image: url('icons8-done.svg');
 	width: 45%;
 	
 	float: right;
