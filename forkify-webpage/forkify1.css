@@ -32,17 +32,20 @@ header{
 	position: relative;
 	background-color: white;
 	border-radius: 20px;
+	padding-left:20px;
 }
 figure{
-	float:left;
-	width:25%;
+    float: left;
+    width: 25%;
+    position: relative;
+    right: 10px;
 }
 figure>img{
 	    width: 75%;
     position: relative;
     left: 5px;
     top: 5px;
-    padding: 15px 25px;
+    padding: 15px 12px;
 	}
 .head-search{
 	width: 35%;
@@ -85,7 +88,7 @@ svg{
 	 width: 25%;
     position: relative;
     float: left;
-    left: 10%;
+    left: 13%;
     top: 15px;
 }
 .nav>ul>li{
@@ -145,11 +148,19 @@ li>svg{
 	position: relative;
 	top:10px;
 	float: left;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	width:80%;
 	text-transform: uppercase;
 }.forkify-resultsbar>p{
 	  margin: 3%;
 	  text-transform: uppercase;
 	  font-size: 12px; 
+	  overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	width:80%;
 }
 .main-img>h1,h2{
 	background-image: linear-gradient(97deg, #fbdb89,#f38e82,#f48982);
@@ -192,11 +203,15 @@ h2{
 
 .minus
 {
-	width: 16px;
-	float: left;
-	position: relative;
-	left: 30px;
-	bottom: 23px;
+width: 17px;
+    float: left;
+    position: absolute;
+   
+    top: 1px;
+}
+.add{
+	position:relative;
+	left:20px;
 }
 .ingredients{    
     width: 100%;
@@ -208,7 +223,7 @@ h2{
 
 }
 .ingredients>h1{
-	font-size: 25px;
+	font-size: 20px;
 	color: tomato;
 	text-transform: uppercase;
 	text-align: center;
@@ -218,7 +233,7 @@ h2{
     
 }
 .list-ingredients>li{
-	list-style-image: url('svg icons/icons8-done.svg');
+	list-style-image: url('icons8-done.svg');
 	width: 45%;
 	
 	float: right;
@@ -244,7 +259,7 @@ h2{
 }
 .footer-right>button{
 
-	background-image: linear-gradient(223deg, #f38e82,#e5b741,#f48982, #dcd30e8a);
+	background-image: linear-gradient(330deg, #f38e82,#e5b741);
 	color: white;
 	margin:0px 45%;
 	width:20%;
@@ -263,7 +278,7 @@ h2{
 	position: absolute;
 	float: left;
 	width: 35%;
-	padding: 1%;	
+	padding: 0% 20px;	
 }
 .footer-left>p{
 	text-align: left;
@@ -320,11 +335,12 @@ h2{
 .quantity{
 	float: left;
 	position: relative;
-	left: 25%;
+	left: 20%;
 	bottom: 10px;
 }
 .recipe-quantity{
 	width:20px;
+	
 }
 .recipe-favorate{
 	width: 35px;
@@ -334,13 +350,13 @@ h2{
 	position: relative;
 	right: 15%;
 	border-radius: 100%;
-	bottom: 13px;
+	bottom: 20px;
 }
 .recipe-favorate>svg{
 	width: 20px;
 	position: relative;
 	top: 8px;
-	left: 7.5px;
+	left: 7px;
 	fill: ghostwhite;
 }
 .btn-left>svg,.btn-right>svg{
