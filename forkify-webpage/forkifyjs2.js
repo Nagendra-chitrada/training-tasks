@@ -1,3 +1,4 @@
+/*
 var btnPrevioues=document.querySelector(".btn-left");
 var btnNext=document.querySelector(".btn-right");
 var resultSider=document.querySelector("#searchresults");
@@ -33,7 +34,7 @@ function nextPage(){
     resultSider.innerHTML="";
     while(i<itemsForkify.length){
         if(count!=10){
-    results();
+        results();
         btnNext.disabled=(i==itemsForkify.length-1)?true:false;
         i++;
         }else{
@@ -58,4 +59,4 @@ function backPage(){
         }
 
     }
-}
+}*/

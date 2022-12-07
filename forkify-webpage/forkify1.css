@@ -31,7 +31,7 @@ header{
 	width: 100%;
 	position: relative;
 	background-color: white;
-	border-radius: 20px;
+	border-radius: 10px;
 	padding-left:20px;
 }
 figure{
@@ -48,19 +48,19 @@ figure>img{
     padding: 15px 12px;
 	}
 .head-search{
-	width: 35%;
+	width:40%;
 	float: left;
 	align-items: center;
 	position: relative;
 	top: 20px;
 }
 .head-search>input{
-position: relative;
-    width: 100%;
-    top: 0;
+    position: relative;
+    width: 70%;
     height: 40px;
     border-radius: 20px;
     border: 0;
+    padding-left: 15px;
 }
 .head-search>button{
         background-image: linear-gradient(330deg, #f38e82,#e5b741);
@@ -88,7 +88,7 @@ svg{
 	 width: 25%;
     position: relative;
     float: left;
-    left: 13%;
+    left: 9%;
     top: 15px;
 }
 .nav>ul>li{
@@ -106,7 +106,7 @@ li>svg{
     width: 35%;
     position: relative;
     float: left;
-    padding: 0px 20px; 
+   
 	
 }
 .forkify-resultsbar{
@@ -116,7 +116,7 @@ li>svg{
     float: left;
     position: relative;
     background:white;
-
+    padding: 0px 13px;
 }
 .result-img{
 	width: 50px;
@@ -212,6 +212,7 @@ width: 17px;
 .add{
 	position:relative;
 	left:20px;
+	bottom:1px;
 }
 .ingredients{    
     width: 100%;
@@ -251,7 +252,7 @@ width: 17px;
 	font-size:20px;
 	text-transform:uppercase;
 	text-align:center;
-	margin:10px 0px;
+	margin:20px 0px;
 }
 .footer-right >p{
 	text-transform:capitalize;
@@ -261,7 +262,7 @@ width: 17px;
 
 	background-image: linear-gradient(330deg, #f38e82,#e5b741);
 	color: white;
-	margin:0px 45%;
+    margin: 23px 40%;
 	width:20%;
 	border-radius: 20px;border:0;
 	padding:5px;
@@ -276,6 +277,7 @@ width: 17px;
 }
 .footer-left{
 	position: absolute;
+	bottom:80px;
 	float: left;
 	width: 35%;
 	padding: 0% 20px;	
@@ -310,7 +312,7 @@ width: 17px;
     position: relative;
     top: 82px;
     background-color: #ffffff;
-    height: 150px;
+    height: 200px;
     float: left;
     border-radius: 20px;
 }
@@ -321,16 +323,20 @@ width: 17px;
 }
 #time{
 	position: relative;
-	bottom: 19px;
+	bottom: 22px;
 }
 .recipe-servre{
 	width: 35%;
 	position: relative;
 	top: 15px;left: 20px;
 }
+.recipe-servre>svg{
+	position:relative;
+	width:24px;
+}
 .recipe-servre>span{
 	position:relative;
-	bottom:5px;
+	bottom:6px;
 }
 .quantity{
 	float: left;

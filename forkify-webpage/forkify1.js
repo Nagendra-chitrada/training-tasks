@@ -232,7 +232,7 @@ const itemsForkify=
     "source_url": "http://whatsgabycooking.com/pizza-monkey-bread/",
     "recipe_id": "ead4e0",
     "image_url": "http://forkify-api.herokuapp.com/images/PizzaMonkeyBread67f8.jpg",
-    "social_rank": 99.99999570141472,
+    "social_rank": 99.9999, 
     "publisher_url": "http://whatsgabycooking.com"
   },
   {
@@ -258,24 +258,29 @@ const itemsForkify=
 
 
 //------script------//
-/*
+var btnPrevioues=document.querySelector(".btn-left");
+var btnNext=document.querySelector(".btn-right");
+var resultSider=document.querySelector("#searchresults");
 var i=0,count=0;
+
 btnPrevioues.addEventListener("click",prevousPage);
 
 btnNext.addEventListener("click",nextPage);
 
-function nextPage(){
-count=0;
+if(i>10){
+btnPrevioues.disabled=true;
+}else{
+	btnPrevioues.disabled=false;
+}
 
+
+nextPage();
+function nextPage(){
+count++;
+  i=(count*10)-10;
 document.querySelector("#searchresults").innerHTML='';
-	while(i<itemsForkify.length){
-    if(i+1==itemsForkify.length){
-      btnNext.disabled=true;
-      btnPrevioues.disabled=false;
-      break;
-    }else{
-      btnNext.disabled=false;
-    }
+	while(i<(count*10)){
+   
 	document.querySelector("#searchresults").innerHTML+=`
 	<li>
 	<div class="forkify-resultsbar">
@@ -285,29 +290,21 @@ document.querySelector("#searchresults").innerHTML='';
 	</div>
 	
 	</li>`;
-	count++;
 	i++;
-  
-	if(count==10){
-	break;
-	}
 	
 }
+
+
 }
-nextPage();
+
 
 function prevousPage(){
-  count=0;
   
+	count--;
   document.querySelector("#searchresults").innerHTML='';
-  while(i<itemsForkify.length){
-    if(i<10){
-      btnPrevioues.disabled=true;
-      btnNext.disabled=false;
-      break;
-    }else{
-      btnPrevioues.disabled=false;
-    }
+  i=(count*10)-10;
+  while(i<count*10){
+  
     document.querySelector("#searchresults").innerHTML+=`
 	<li>
 	<div class="forkify-resultsbar">
@@ -317,13 +314,12 @@ function prevousPage(){
 	</div>
 	
 	</li>`;
-  count++;
-  i--;
-  if(count==10){
 
-    break;
-    }
+  i++;
+  
   }
-
+  
 }
-*/
+
+
+
